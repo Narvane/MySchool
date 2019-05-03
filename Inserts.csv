@@ -1,0 +1,7 @@
+idStudent,username,studentName,cpf,rg,borndate,studentPassword,email
+1,Pedro,Pedro,123,123,1999-02-02,123,p
+2,Paulo,Paulo,1234,1234,1999-02-02,123,pp
+3,Pirlo,Pirlo,12345,12345,1999-02-02,123,ppp
+4,Mauro,Mauro,123456,123456,1999-02-02,123,pdd
+5,Zé,Zé,123098,123432,1999-02-02,123,kds
+6,Henrique,Henrique,123045,123476,1999-02-02,123,lasd

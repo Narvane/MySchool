@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myschool.view.StudentTableController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="37.0" layoutY="141.0" prefHeight="220.0" prefWidth="346.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="131.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="215.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Nome" />
+                  <Label text="Data de nascimento" GridPane.rowIndex="6" />
+                  <Label text="Rg" GridPane.rowIndex="1" />
+                  <Label text="Cpf" GridPane.rowIndex="2" />
+                  <TextField fx:id="name" style="-fx-background-radius: 3;" GridPane.columnIndex="1" />
+                  <TextField fx:id="rg" style="-fx-background-radius: 3;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="cpf" style="-fx-background-radius: 3;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="borndate" prefHeight="25.0" prefWidth="132.0" style="-fx-background-radius: 2;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label text="Email" GridPane.rowIndex="3" />
+                  <TextField fx:id="email" style="-fx-background-radius: 3;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Username" GridPane.rowIndex="4" />
+                  <Label text="Senha" GridPane.rowIndex="5" />
+                  <TextField fx:id="username" style="-fx-background-radius: 3;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+            <Separator layoutX="14.0" layoutY="126.0" prefHeight="0.0" prefWidth="362.0" />
+            <Label layoutX="14.0" layoutY="82.0" text="Atualizar dados do Aluno">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="13.0" layoutY="382.0" prefHeight="0.0" prefWidth="375.0" />
+            <Label fx:id="feedback" layoutX="30.0" layoutY="395.0" text="Label" textFill="RED" visible="false" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="43.0" prefWidth="400.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="22.0" prefWidth="77.0" text="Atualizar" />
+            <Button mnemonicParsing="false" onAction="#Cancel" text="Cancelar" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
